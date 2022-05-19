@@ -1,0 +1,113 @@
+.transactionTable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.topLineTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.topLineTable .item {
+    font-weight: bold;
+    color: white;
+    background: -webkit-linear-gradient(90deg, rgb(65, 65, 67) 2%, rgb(101, 96, 95) 73%);
+    background: -moz-linear-gradient(90deg, rgb(65, 65, 67) 2%, rgb(101, 96, 95) 73%);
+    background: linear-gradient(90deg, rgb(65, 65, 67) 2%, rgb(101, 96, 95) 73%);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 5px;
+    width: 25%;
+    height: 40px;
+}
+
+.transactionElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.retryTransactionButton {
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    background: -webkit-linear-gradient(90deg, rgb(65, 65, 67) 2%, rgb(101, 96, 95) 73%);
+    background: -moz-linear-gradient(90deg, rgb(65, 65, 67) 2%, rgb(101, 96, 95) 73%);
+    background: linear-gradient(90deg, rgb(65, 65, 67) 2%, rgb(101, 96, 95) 73%);
+    border-radius: 5px;
+    color: #f2fcf3;
+    font-weight: bold;
+    border: none;
+}
+
+.skeletonTransactionButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    color: #f2fcf3;
+    font-weight: bold;
+}
+
+.gif {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.retryTransactionButton:hover {
+    background: -webkit-linear-gradient(270deg, rgb(96, 95, 99) 2%, rgb(154, 148, 147) 73%);
+    background: -moz-linear-gradient(270deg, rgb(96, 95, 99) 2%, rgb(154, 148, 147) 73%);
+    background: linear-gradient(270deg, rgb(96, 95, 99) 2%, rgb(154, 148, 147) 73%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1100px){
+
+    .topLineTable .item {
+        font-size: 15px;
+    }
+    .item {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .topLineTable .item {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .transactionTable {
+        flex-direction: column;
+    }
+    .topLineTable {
+        display: none;
+        flex-direction: column;
+    }
+    .transactionElement {
+        width: 90%;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .item {
+        width: 90%;
+        background-color: #ededed;
+    }
+}
