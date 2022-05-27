@@ -136,7 +136,7 @@ const HomePage = () => {
                                         disabled={setButtonState()}
                                         onClick={requestTransaction}
                                         className={classes.transactionButton}>
-                                    AMOUNT NOW
+                                    AMOUNT Transaction
                                 </button>
                             }
 
